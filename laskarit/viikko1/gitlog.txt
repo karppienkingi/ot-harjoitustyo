@@ -1,0 +1,113 @@
+commit 283bf8ab4ca1e538c0c84e2f38f80cf4aa1bc6b5
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:51:21 2022 +0200
+
+    poistettu file1, nimimuutos file2->file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7c543c10554ad8ec6fd5880c77dc9d829de83da1
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:47:51 2022 +0200
+
+    lisätty uusi hakemisto
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b0009fa3bba1afdb92315db553b2bd0cbcddac2f
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:43:10 2022 +0200
+
+    sisältömuutoksia tiedostoihin eka ja kolmas
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit b0c128b7bfcee5c9b0fd46eddb1aa94bc3a1df33
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:40:59 2022 +0200
+
+    muutettu tiedosto.txt nimi eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit fb2865dba0311c173964cff2602fd833f927f09f
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:39:58 2022 +0200
+
+    poistettu toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7709c31d8b75779417c8714513f62afe470f4582
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:21:57 2022 +0200
+
+    tiedosto.txt sisältöä muutettu
+
+ tiedosto.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit a7750df8b3c2ef36233cef8bf935226af3d5149a
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:20:15 2022 +0200
+
+    lisätty sisältöä tiedost.txt
+
+ tiedosto.txt | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+commit 7eef645a7d470bf4e888243a02e7fa86bf076f1a
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:13:36 2022 +0200
+
+    lisätty stuff hakemisto ja random.txt
+
+ stuff/random.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 120790958cb892a1be6439bbfaaa6373583969eb
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:12:37 2022 +0200
+
+    muutoksia toinen ja kolmas.txt
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 68aca88247f5b0bf42978822415e74dddbd8baa4
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:10:45 2022 +0200
+
+    lisätty kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8c1046aa14828e79a6cfe46ce42d0fd53ca5d446
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 13:07:10 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 43aeed56ac1ba3023b0574b821c6c48f883bbe1c
+Author: karppienkingi <mirka.vaananen@gmail.com>
+Date:   Fri Mar 18 12:58:08 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
