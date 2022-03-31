@@ -1,5 +1,13 @@
 # Ohjelmistotekniikan harjoitustyö
 
+## Muistipeli
+
+### Dokumentaatio
+
+[Määrittelydokumentti](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/Maarittelydokumentti.md)
+
+[Työaikakirjanpito](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
 ## Tehtävät
 
 ### Viikko 1
