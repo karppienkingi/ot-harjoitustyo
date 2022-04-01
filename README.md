@@ -22,3 +22,13 @@
 [unicafe](https://github.com/karppienkingi/ot-harjoitustyo/tree/master/laskarit/viikko2/Unicafe)
 
 [testikattavuus](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/laskarit/viikko2/Unicafe_testikattavuus.png)
+
+### Viikko 3
+
+[monopoly](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli1.md)
+
+[laajennettu monopoly](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli2.md)
+
+[moottorisekvenssikaavio](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio_moottori.md)
+
+[HSL-sekvenssikaavio](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssiokaavio_HSL.md)
