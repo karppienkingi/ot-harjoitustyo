@@ -4,12 +4,14 @@
  */
 package domain;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.HashMap;
+import org.junit.After;
+import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  *
@@ -20,41 +22,47 @@ public class CardsTest {
     public CardsTest() {
     }
 
-    @org.junit.jupiter.api.BeforeAll
+    @BeforeClass
     public static void setUpClass() throws Exception {
     }
 
-    @org.junit.jupiter.api.AfterAll
+    @AfterClass
     public static void tearDownClass() throws Exception {
     }
 
-    @org.junit.jupiter.api.BeforeEach
+    @Before
     public void setUp() throws Exception {
     }
 
-    @org.junit.jupiter.api.AfterEach
+    @After
     public void tearDown() throws Exception {
     }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-    
+
+    /**
+     * Test of getPairs method, of class Cards.
+     */
     @Test
-    public void setTurnedSetsCorrect() {
-        
+    public void testGetPairs() {
+        System.out.println("getPairs");
+        Cards instance = null;
+        HashMap<Integer, Integer> expResult = null;
+        HashMap<Integer, Integer> result = instance.getPairs();
+        assertEquals(expResult, result);
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getPair method, of class Cards.
+     */
+    @Test
+    public void testGetPair() {
+        System.out.println("getPair");
+        int cardnro = 0;
+        Cards instance = null;
+        int expResult = 0;
+        int result = instance.getPair(cardnro);
+        assertEquals(expResult, result);
+        fail("The test case is a prototype.");
     }
     
 }

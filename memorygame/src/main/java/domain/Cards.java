@@ -36,7 +36,6 @@ public class Cards {
         }
     }
     
-
     public HashMap<Integer, Integer> getPairs() {
         return this.pairs;
     }
