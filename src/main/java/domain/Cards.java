@@ -3,7 +3,6 @@ package domain;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import javafx.scene.image.Image;
 
 /**
  *
@@ -11,8 +10,7 @@ import javafx.scene.image.Image;
  */
 public class Cards {
 
-    Image image;
-    Cards pair;
+    private Images images;
     int numberOfCard;
     private ArrayList<Integer> cards;
     private HashMap<Integer, Integer> pairs;
@@ -23,8 +21,8 @@ public class Cards {
         for (int i = 0; i < amountOfPairs * 2; i++) {
             this.cards.add(i);
         }
+        this.images = new Images(amountOfPairs);
         createPairs();
-
     }
 
     private void createPairs() {

@@ -1,0 +1,5 @@
+services\Gamelogic.class
+com\mvaana\memorygame\App.class
+com\mvaana\memorygame\SystemInfo.class
+domain\Cards.class
+domain\Images.class
