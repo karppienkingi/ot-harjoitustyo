@@ -5,9 +5,11 @@ import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.TilePane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import services.Gamelogic;
 
@@ -15,6 +17,8 @@ import services.Gamelogic;
  * JavaFX App
  */
 public class App extends Application {
+    
+    static Button[] buttons;
 
     @Override
     public void start(Stage stage) {
@@ -22,7 +26,11 @@ public class App extends Application {
 
         VBox memorygame = new VBox();
 
-        Button[] buttons = new Button[6];
+        buttons = new Button[6];
+
+        Label label = new Label("");
+        label.setFont(Font.font("Stone", 60));
+        label.setText("");
 
         for (int i = 0; i < 6; i++) {
             buttons[i] = new Button("" + (i));
@@ -32,13 +40,15 @@ public class App extends Application {
         for (final Button b : buttons) {
             b.setOnAction((event) -> {
                 System.out.println("Chosen " + b.getText());
-                if (logic.getTurned() == 0) {
-                    
+                if (logic.getTurned() == -1) {
+
                     logic.chosenCard = Integer.valueOf(b.getText());
-                    logic.setTurned(1);
+                    logic.setTurned(Integer.valueOf(b.getText()));
+                    b.setDisable(true);
                 } else {
-                    logic.MatchCheck(Integer.valueOf(b.getText()));
-                    logic.setTurned(0);
+                    logic.turn(buttons);
+                    label.setText(logic.MatchCheck(Integer.valueOf(b.getText()), buttons));
+                    logic.setTurned(-1);
                 }
             });
         }
@@ -54,6 +64,7 @@ public class App extends Application {
 
         memorygame.getChildren().add(board);
         memorygame.setFillWidth(false);
+        memorygame.getChildren().add(label);
 
         Scene scene = new Scene(memorygame, 600, 600, Color.GHOSTWHITE);
 

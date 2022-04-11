@@ -12,8 +12,8 @@ public class Cards {
 
     private Images images;
     int numberOfCard;
-    private ArrayList<Integer> cards;
-    private HashMap<Integer, Integer> pairs;
+    private final ArrayList<Integer> cards;
+    private final HashMap<Integer, Integer> pairs;
 
     public Cards(int amountOfPairs) {
         this.cards = new ArrayList<>();
@@ -21,7 +21,7 @@ public class Cards {
         for (int i = 0; i < amountOfPairs * 2; i++) {
             this.cards.add(i);
         }
-        this.images = new Images(amountOfPairs);
+        //this.images = new Images(amountOfPairs);
         createPairs();
     }
 
