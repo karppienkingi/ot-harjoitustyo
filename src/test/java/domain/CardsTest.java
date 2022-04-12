@@ -41,28 +41,6 @@ public class CardsTest {
     /**
      * Test of getPairs method, of class Cards.
      */
-    @Test
-    public void testGetPairs() {
-        System.out.println("getPairs");
-        Cards instance = null;
-        HashMap<Integer, Integer> expResult = null;
-        HashMap<Integer, Integer> result = instance.getPairs();
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
-    }
 
-    /**
-     * Test of getPair method, of class Cards.
-     */
-    @Test
-    public void testGetPair() {
-        System.out.println("getPair");
-        int cardnro = 0;
-        Cards instance = null;
-        int expResult = 0;
-        int result = instance.getPair(cardnro);
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
-    }
     
 }
