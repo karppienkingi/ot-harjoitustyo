@@ -10,3 +10,5 @@
 |5.4.   | 5     | Sovelluslogiikan tekemistä ja Junit testien kanssa taistelua|
 |8.4.   |  6    | Kuvien tuomista mukaan koodiin yritetty|
 |11.4.  | 2     | Pelin kulkua ja logiikkaa paranneltu   |
+|12.4.  | 3     | Käyttöliittymää hajautettu, ja pelin voi nyt pelata uudestaan   |
+| yht.  | 30    ||
