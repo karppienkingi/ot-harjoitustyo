@@ -91,11 +91,10 @@ public class Memorygame {
         this.newgame.setOnAction((event) -> {
             this.logic = new Gamelogic(3);
             this.newgame.setVisible(false);
-            for (int i = 0; i < buttons.length; i++) {
-            buttons[i].setDisable(false);
-            this.label.setText("");
-            
-        }
+            for (Button button : buttons) {
+                button.setDisable(false);
+                this.label.setText("");
+            }
         });
         
         setGame();

@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 
 public class Gamelogic {
 
-    private final Cards cards;
+    private Cards cards;
     public int chosenCard;
     private int turned;
     private final int pairAmount;
@@ -25,7 +25,7 @@ public class Gamelogic {
         this.chosenCard = 0;
         this.turned = -1;
         this.matches = 0;
-        this.cards = new Cards(amountOfPairs);
+        this.cards = new Cards(this.pairAmount);
     }
 
     public boolean winCheck() {
