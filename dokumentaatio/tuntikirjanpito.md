@@ -11,4 +11,5 @@
 |8.4.   |  6    | Kuvien tuomista mukaan koodiin yritetty|
 |11.4.  | 2     | Pelin kulkua ja logiikkaa paranneltu   |
 |12.4.  | 3     | Käyttöliittymää hajautettu, ja pelin voi nyt pelata uudestaan   |
-| yht.  | 30    ||
+|13.4.  | 8     | Vaikeustasot ja toinen näkymä tuotu peliin. Omista ongelmista johtuen päätin mennä helpoimmalla ja luoda uudestaan projektin koneellani |
+| yht.  | 38    ||
