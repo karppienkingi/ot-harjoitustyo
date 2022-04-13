@@ -14,8 +14,10 @@ public class Cards {
     int numberOfCard;
     private final ArrayList<Integer> cards;
     private final HashMap<Integer, Integer> pairs;
+    private int amountOfCards;
 
     public Cards(int amountOfPairs) {
+        this.amountOfCards = amountOfPairs*2;
         this.cards = new ArrayList<>();
         this.pairs = new HashMap<>();
         for (int i = 0; i < amountOfPairs * 2; i++) {
@@ -28,7 +30,7 @@ public class Cards {
     private void createPairs() {
         Collections.shuffle(this.cards);
 
-        for (int i = 0; i < 6; i += 2) {
+        for (int i = 0; i < this.amountOfCards ; i += 2) {
             pairs.put(this.cards.get(i), this.cards.get(i + 1));
             pairs.put(this.cards.get(i + 1), this.cards.get(i));
         }
