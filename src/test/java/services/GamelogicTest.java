@@ -44,4 +44,60 @@ public class GamelogicTest {
         assertEquals(number, logic.getTurned());
     }
 
+    @Test
+
+    public void winChekcReturnsCorrectWhenNoWin() {
+        boolean expected = false;
+        assertEquals(expected, logic.winCheck());
+    }
+
+    @Test
+    public void winCheckReturnsCorrectWhenWin() {
+        boolean expected = true;
+
+        for (int i = 0; i < 12; i += 2) {
+            logic.addMatch(i, i + 1);
+        }
+
+        assertEquals(expected, logic.winCheck());
+    }
+
+    @Test
+    public void addMatchAddsCorrectCardPair() {
+        int first = 0;
+        int pair = 7;
+        logic.addMatch(first, pair);
+        assertEquals(first, logic.getMatch(pair));
+    }
+
+    @Test
+    public void addMatchIncreasesMatchCounter() {
+        int expected = 4;
+        for (int i = 0; i < 8; i += 2) {
+            logic.addMatch(i, i + 1);
+        }
+        assertEquals(expected, logic.getMatchAmount());
+    }
+
+    @Test
+    public void getMatchAmountReturnsCorrect() {
+        int expected = 0;
+        assertEquals(expected, logic.getMatchAmount());
+    }
+
+    @Test
+    public void MatchCheckReturnsTryAgain() {
+
+    }
+
+    @Test
+    public void MatchCheckReturnsMatch() {
+
+    }
+
+    @Test
+    public void MatchCheckReturnsYouWon() {
+
+    }
+
 }
