@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 
 public class Gamelogic {
 
-    private Cards cards;
+    private final Cards cards;
     public int chosenCard;
     private int turned;
     private final int pairAmount;
@@ -33,10 +33,10 @@ public class Gamelogic {
     }
 
     public String MatchCheck(int cardnro, Button[] buttons) {
-        if (cards.getPair(cardnro) == chosenCard) {
-            if (!this.cardMatches.containsKey(chosenCard) && !this.cardMatches.containsKey(cardnro)) {
-                addMatch(chosenCard, cardnro);
-                buttons[chosenCard].setDisable(true);
+        if (this.cards.getPair(cardnro) == this.chosenCard) {
+            if (!this.cardMatches.containsKey(this.chosenCard) && !this.cardMatches.containsKey(cardnro)) {
+                addMatch(this.chosenCard, cardnro);
+                buttons[this.chosenCard].setDisable(true);
                 buttons[cardnro].setDisable(true);
                 if (winCheck()) {
                     return "You won!";
@@ -60,11 +60,18 @@ public class Gamelogic {
         return this.turned;
     }
 
-    private void addMatch(int card1, int card2) {
+    public void addMatch(int card1, int card2) {
         this.cardMatches.put(card1, card2);
         this.cardMatches.put(card2, card1);
         this.matches += 1;
 
     }
 
+    public int getMatch(int card) {
+        return this.cardMatches.get(card);
+    }
+
+    public int getMatchAmount() {
+        return this.matches;
+    }
 }
