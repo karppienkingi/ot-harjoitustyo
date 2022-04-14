@@ -37,7 +37,7 @@ public class Memorygame {
 
         buttons = new Button[this.amountOfPairs * 2];
 
-        this.newgame = new Button("new game");
+        this.newgame = new Button("play again");
         this.newgame.setFocusTraversable(false);
         this.newgame.setMinSize(20, 40);
         this.newgame.setFont(Font.font("Stone", 16));
