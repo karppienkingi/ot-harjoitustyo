@@ -14,7 +14,7 @@ public class Cards {
     int numberOfCard;
     private final ArrayList<Integer> cards;
     private final HashMap<Integer, Integer> pairs;
-    private int amountOfCards;
+    private final int amountOfCards;
 
     public Cards(int amountOfPairs) {
         this.amountOfCards = amountOfPairs*2;
