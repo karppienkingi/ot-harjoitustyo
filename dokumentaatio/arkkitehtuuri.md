@@ -1,0 +1,3 @@
+# Arkkitehtuurikuvaus
+
+![](kuvat/luokkakaavio.png)
