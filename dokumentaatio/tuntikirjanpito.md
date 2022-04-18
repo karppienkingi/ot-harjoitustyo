@@ -12,4 +12,5 @@
 |11.4.  | 2     | Pelin kulkua ja logiikkaa paranneltu   |
 |12.4.  | 3     | Käyttöliittymää hajautettu, ja pelin voi nyt pelata uudestaan   |
 |13.4.  | 8     | Vaikeustasot ja toinen näkymä tuotu peliin. Omista ongelmista johtuen päätin mennä helpoimmalla ja luoda uudestaan projektin koneellani |
-| yht.  | 38    ||
+|18.4.  | 2     | Pakkausrakenteen, testikattavuuden ja checkstylen korjaamista |
+| yht.  | 40    ||
