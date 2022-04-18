@@ -1,6 +1,6 @@
-package services;
+package com.mvaana.memorygame.services;
 
-import domain.Cards;
+import com.mvaana.memorygame.domain.Cards;
 import java.util.HashMap;
 import javafx.scene.control.Button;
 

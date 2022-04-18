@@ -1,6 +1,6 @@
-package ui;
+package com.mvaana.memorygame.ui;
 
-import services.Gamelogic;
+import com.mvaana.memorygame.services.Gamelogic;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
