@@ -1,4 +1,4 @@
-package com.mvaana.memorygame;
+package com.mvaana.memorygame.ui;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;

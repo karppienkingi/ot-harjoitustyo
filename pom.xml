@@ -51,7 +51,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>com.mvaana.memorygame.App</mainClass>
+                    <mainClass>com.mvaana.memorygame.ui.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>
