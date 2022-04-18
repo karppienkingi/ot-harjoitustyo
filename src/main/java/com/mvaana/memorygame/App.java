@@ -11,7 +11,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import ui.Memorygame;
+import com.mvaana.memorygame.ui.Memorygame;
 
 /**
  * JavaFX App

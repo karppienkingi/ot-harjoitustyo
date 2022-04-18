@@ -4,6 +4,7 @@
  */
 package domain;
 
+import com.mvaana.memorygame.domain.Cards;
 import java.util.HashMap;
 import org.junit.After;
 import org.junit.AfterClass;
