@@ -10,6 +10,8 @@
 
 [Changelog](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
+[Arkkitehtuurikuvaus](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 ## Komentorivitoiminnot
 
 ### Ohjelman suoritus
