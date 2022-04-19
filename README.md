@@ -17,7 +17,7 @@
 ### Ohjelman suoritus
 Suorita ohjelma komentoriviltä komennolla: 
 
-`mvn compile exec:java -Dexec.mainClass=com.mvaana.memorygame.App`
+`mvn compile exec:java -Dexec.mainClass=com.mvaana.memorygame.ui.App`
 
 ### Testaus
 Ohjelman testaus suoritetaan komennolla:
