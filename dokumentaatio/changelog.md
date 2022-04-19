@@ -15,3 +15,4 @@
 - App-luokkaan lisätty aloitusvalikkonäkymä
 - Pelin voi pelata 4 eri vaikeustasolla
 - Pelin jälkeen mahdollisuus palata valitsemaan uusi vaikeustaso
+- Pakkausrakennetta korjattu, (siirretty kaikki com.mvaana.memorygame:n alle)
