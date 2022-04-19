@@ -12,6 +12,10 @@
 
 [Arkkitehtuurikuvaus](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+## Releaset
+
+[viikko 5](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Komentorivitoiminnot
 
 ### Ohjelman suoritus
