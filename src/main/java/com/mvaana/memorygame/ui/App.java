@@ -11,8 +11,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import com.mvaana.memorygame.ui.Memorygame;
-
 /**
  * JavaFX App
  */
@@ -42,7 +40,9 @@ public class App extends Application {
         pane.setAlignment(title, Pos.CENTER);
         pane.setCenter(buttons);
         pane.setAlignment(buttons, Pos.TOP_CENTER);
-
+        
+        stage.setWidth(900);
+        stage.setHeight(700);
         stage.setScene(scene);
         stage.setTitle("Working title");
         stage.show();

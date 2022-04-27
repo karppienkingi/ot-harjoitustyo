@@ -8,10 +8,11 @@ import javafx.scene.control.Button;
  *
  * @author Mirka
  */
-
 public class Gamelogic {
 
     private final Cards cards;
+    private int first;
+    private int second;
     public int chosenCard;
     private int turned;
     private final int pairAmount;
@@ -41,7 +42,6 @@ public class Gamelogic {
                 if (winCheck()) {
                     return "You won!";
                 }
-
                 return "Match";
             }
         }
@@ -50,10 +50,32 @@ public class Gamelogic {
 
     public void turn(Button[] buttons) {
         buttons[this.turned].setDisable(false);
+        buttons[this.first].setGraphic(null);
+        buttons[this.second].setGraphic(null);
+    }
+
+    public void displayImage(Button button, int place) {
+        switch (place) {
+            case 1:
+                button.setGraphic(this.cards.getImage(this.first));
+                break;
+            case 2:
+                button.setGraphic(this.cards.getImage(this.second));
+                break;
+        }
+
     }
 
     public void setTurned(int number) {
         this.turned = number;
+    }
+
+    public void setFirst(int number) {
+        this.first = number;
+    }
+
+    public void setSecond(int number) {
+        this.second = number;
     }
 
     public int getTurned() {

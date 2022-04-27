@@ -37,15 +37,8 @@ public class Memorygame {
 
         buttons = new Button[this.amountOfPairs * 2];
 
-        this.newgame = new Button("play again");
-        this.newgame.setFocusTraversable(false);
-        this.newgame.setMinSize(20, 40);
-        this.newgame.setFont(Font.font("Stone", 16));
-
-        this.toMenu = new Button("Back to menu");
-        this.toMenu.setFocusTraversable(false);
-        this.toMenu.setMinSize(20, 40);
-        this.toMenu.setFont(Font.font("Stone", 16));
+        this.newgame = createButton("play again");
+        this.toMenu = createButton("Back to menu");
 
         this.label = new Label("");
         this.label.setFont(Font.font("Stone", 40));
@@ -53,24 +46,29 @@ public class Memorygame {
 
         for (int i = 0; i < amount * 2; i++) {
             buttons[i] = new Button("" + (i));
-            buttons[i].setMinSize(100, 200);
+            buttons[i].setMinSize(120, 200);
             buttons[i].setFocusTraversable(false);
         }
 
         for (final Button b : buttons) {
             b.setOnAction((event) -> {
                 if (logic.getTurned() == -1) {
-
                     logic.chosenCard = Integer.valueOf(b.getText());
                     logic.setTurned(Integer.valueOf(b.getText()));
+                    logic.setFirst(Integer.valueOf(b.getText()));
+                    logic.displayImage(b, 1);
                     b.setDisable(true);
                 } else {
+
+                    logic.setSecond(Integer.valueOf(b.getText()));
+                    logic.displayImage(b, 2);
                     logic.turn(buttons);
                     this.label.setText(logic.MatchCheck(Integer.valueOf(b.getText()), buttons));
                     if (logic.winCheck()) {
                         endGame();
                     }
                     logic.setTurned(-1);
+
                 }
             });
         }
@@ -81,8 +79,17 @@ public class Memorygame {
         board.getChildren().addAll(buttons);
         board.setTileAlignment(Pos.TOP_LEFT);
         board.setOrientation(Orientation.HORIZONTAL);
-        board.setPrefColumns(3);
-        board.setPrefRows(2);
+        if (amount <= 3) {
+            board.setPrefColumns(3);
+        } else if (amount == 6) {
+            board.setPrefColumns(4);
+            this.stage.setWidth(1000);
+            this.stage.setHeight(700);
+        } else {
+            board.setPrefColumns(6);
+            this.stage.setWidth(1200);
+            this.stage.setHeight(900);
+        }
 
         this.game = new VBox();
         this.game.getChildren().add(board);
@@ -123,6 +130,15 @@ public class Memorygame {
             setMenu();
         });
 
+    }
+
+    private Button createButton(String name) {
+        Button button = new Button(name);
+        button.setFocusTraversable(false);
+        button.setMinSize(20, 40);
+        button.setFont(Font.font("Stone", 16));
+
+        return button;
     }
 
 }
