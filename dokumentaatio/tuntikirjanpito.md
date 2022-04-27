@@ -14,4 +14,5 @@
 |13.4.  | 8     | Vaikeustasot ja toinen näkymä tuotu peliin. Omista ongelmista johtuen päätin mennä helpoimmalla ja luoda uudestaan projektin koneellani |
 |18.4.  | 2     | Pakkausrakenteen, testikattavuuden ja checkstylen korjaamista |
 |19.4.  | 2     | Dokumentaation päivitystä |
-| yht.  | 42    ||
+|27.4.  | 7     | Korttien kuvapuolet lisätty |
+| yht.  | 49    ||
