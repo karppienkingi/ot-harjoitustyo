@@ -63,6 +63,7 @@ public class App extends Application {
     private static Button createButton(String text, Integer amountOfPairs, Stage stage, Scene scene) {
         Button button = new Button(text);
         button.setMinSize(50, 40);
+        button.setFocusTraversable(false);
 
         button.setOnAction((event) -> {
             game = new Memorygame(amountOfPairs, scene, stage);
