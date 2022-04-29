@@ -25,7 +25,7 @@ public class Images {
 
         this.amount = amountOfImages;
         this.shapes = new ArrayList<>();
-        this.colors = new Color[]{Color.SLATEBLUE, Color.DARKORANGE, Color.PALEVIOLETRED, Color.MEDIUMAQUAMARINE};
+        this.colors = new Color[]{Color.PALEVIOLETRED, Color.SLATEBLUE, Color.SEAGREEN, Color.GOLD};
 
         switch (this.amount) {
             case 1:
