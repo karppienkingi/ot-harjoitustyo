@@ -37,12 +37,11 @@ public class Memorygame {
 
         buttons = new Button[this.amountOfPairs * 2];
 
-        this.newgame = createButton("play again");
+        this.newgame = createButton("Play again");
         this.toMenu = createButton("Back to menu");
 
         this.label = new Label("");
         this.label.setFont(Font.font("Stone", 40));
-        this.label.setText("");
 
         for (int i = 0; i < amount * 2; i++) {
             buttons[i] = new Button("" + (i));
@@ -70,6 +69,7 @@ public class Memorygame {
         board.getChildren().addAll(buttons);
         board.setTileAlignment(Pos.TOP_LEFT);
         board.setOrientation(Orientation.HORIZONTAL);
+        
         if (amount <= 3) {
             board.setPrefColumns(3);
         } else if (amount == 6) {
@@ -83,12 +83,10 @@ public class Memorygame {
         }
 
         this.game = new VBox();
-        this.game.getChildren().add(board);
+        this.game.getChildren().addAll(board, this.label, this.newgame, this.toMenu);
         this.game.setFillWidth(false);
-        this.game.getChildren().add(this.label);
-        this.game.getChildren().addAll(this.newgame, this.toMenu);
-        this.newgame.setVisible(false);
-        this.toMenu.setVisible(false);
+        
+        
 
         this.gameView = new Scene(this.game, 600, 600, Color.GHOSTWHITE);
     }
@@ -127,8 +125,9 @@ public class Memorygame {
     private Button createButton(String name) {
         Button button = new Button(name);
         button.setFocusTraversable(false);
-        button.setMinSize(20, 40);
+        button.setPrefSize(150, 30);
         button.setFont(Font.font("Stone", 16));
+        button.setVisible(false);
 
         return button;
     }

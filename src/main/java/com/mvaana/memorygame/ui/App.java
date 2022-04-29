@@ -11,6 +11,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+
 /**
  * JavaFX App
  */
@@ -21,26 +22,28 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {
 
-        Label title = createLabel("Memorygame without pictures atm", 40);
-        Label text = createLabel("Select a level of difficulty", 20);
-        
+        Label title = createLabel("Memory-game", 50);
+        Label text = createLabel("Select a level of difficulty", 27);
+
         BorderPane pane = new BorderPane();
-        
+
         Scene scene = new Scene(pane);
 
-        Button zero = createButton("zero challenge", 1, stage, scene);
-        Button easy = createButton("easy", 3, stage, scene);
-        Button medium = createButton("medium", 6, stage, scene);
-        Button hard = createButton("hard", 12, stage, scene);
+        Button zero = createButton("Zero challenge", 1, stage, scene);
+        Button easy = createButton("Easy", 3, stage, scene);
+        Button medium = createButton("Medium", 6, stage, scene);
+        Button hard = createButton("Hard", 12, stage, scene);
 
         VBox buttons = new VBox();
+        buttons.setSpacing(2);
+        buttons.setPadding(new Insets(5, 5, 5, 5));
         buttons.getChildren().addAll(text, zero, easy, medium, hard);
 
         pane.setTop(title);
         pane.setAlignment(title, Pos.CENTER);
         pane.setCenter(buttons);
         pane.setAlignment(buttons, Pos.TOP_CENTER);
-        
+
         stage.setWidth(900);
         stage.setHeight(700);
         stage.setScene(scene);
@@ -62,7 +65,9 @@ public class App extends Application {
 
     private static Button createButton(String text, Integer amountOfPairs, Stage stage, Scene scene) {
         Button button = new Button(text);
-        button.setMinSize(50, 40);
+        Font font = Font.font("Stone", 20);
+        button.setFont(font);
+        button.setPrefSize(200, 35);
         button.setFocusTraversable(false);
 
         button.setOnAction((event) -> {
