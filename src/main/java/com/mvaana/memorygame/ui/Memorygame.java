@@ -21,13 +21,13 @@ public class Memorygame {
     private Gamelogic logic;
     private final int amountOfPairs;
     private Button[] buttons;
-    private Button newgame;
-    private Button toMenu;
-    private Scene gameView;
-    private VBox game;
+    private final Button newgame;
+    private final Button toMenu;
+    private final Scene gameView;
+    private final VBox game;
     private Label label;
-    private Scene menuView;
-    private Stage stage;
+    private final Scene menuView;
+    private final Stage stage;
 
     public Memorygame(int amount, Scene scene, Stage stage) {
         this.stage = stage;
@@ -49,26 +49,17 @@ public class Memorygame {
             buttons[i].setMinSize(120, 200);
             buttons[i].setFocusTraversable(false);
         }
-
+        
         for (final Button b : buttons) {
             b.setOnAction((event) -> {
                 if (logic.getTurned() == -1) {
-                    logic.chosenCard = Integer.valueOf(b.getText());
-                    logic.setTurned(Integer.valueOf(b.getText()));
-                    logic.setFirst(Integer.valueOf(b.getText()));
-                    logic.displayImage(b, 1);
-                    b.setDisable(true);
+                    logic.pickFirst(buttons, Integer.valueOf(b.getText()));
                 } else {
-
-                    logic.setSecond(Integer.valueOf(b.getText()));
-                    logic.displayImage(b, 2);
-                    logic.turn(buttons);
-                    this.label.setText(logic.MatchCheck(Integer.valueOf(b.getText()), buttons));
+                    this.label.setText(logic.pickSecond(buttons, Integer.valueOf(b.getText())));
                     if (logic.winCheck()) {
                         endGame();
-                    }
+                    }                   
                     logic.setTurned(-1);
-
                 }
             });
         }
@@ -119,6 +110,7 @@ public class Memorygame {
             this.toMenu.setVisible(false);
             for (Button button : buttons) {
                 button.setDisable(false);
+                logic.turnAll(buttons);
                 this.label.setText("");
             }
             setGame();
