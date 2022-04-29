@@ -15,4 +15,5 @@
 |18.4.  | 2     | Pakkausrakenteen, testikattavuuden ja checkstylen korjaamista |
 |19.4.  | 2     | Dokumentaation päivitystä |
 |27.4.  | 7     | Korttien kuvapuolet lisätty |
-| yht.  | 49    ||
+|29.4.  | 4     | Käyttöliittymän hiomista ja refaktorointia |
+| yht.  | 53    ||
