@@ -13,7 +13,6 @@ public class Gamelogic {
     private final Cards cards;
     private int first;
     private int second;
-    public int chosenCard;
     private boolean lastMatch;
     private int turned;
     private final int pairAmount;
@@ -24,7 +23,6 @@ public class Gamelogic {
 
         this.cardMatches = new HashMap<>();
         this.pairAmount = amountOfPairs;
-        this.chosenCard = 0;
         this.turned = -1;
         this.matches = 0;
         this.cards = new Cards(this.pairAmount);
