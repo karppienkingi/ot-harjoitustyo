@@ -16,4 +16,5 @@
 |19.4.  | 2     | Dokumentaation päivitystä |
 |27.4.  | 7     | Korttien kuvapuolet lisätty |
 |29.4.  | 4     | Käyttöliittymän hiomista ja refaktorointia |
-| yht.  | 53    ||
+|3.5.   | 5     | Dokumentaatiota ja koodin siivoamista |
+| yht.  | 58    ||
