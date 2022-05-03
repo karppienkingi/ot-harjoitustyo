@@ -16,3 +16,8 @@
 - Pelin voi pelata 4 eri vaikeustasolla
 - Pelin jälkeen mahdollisuus palata valitsemaan uusi vaikeustaso
 - Pakkausrakennetta korjattu, (siirretty kaikki com.mvaana.memorygame:n alle)
+
+## Viikko 6
+- Images luokka korjattu/lisätty mukaan sovellukseen
+- Kuvat näkyvät pelissä
+- Pelinäkymää korjattu muutenkin
