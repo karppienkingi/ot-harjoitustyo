@@ -145,14 +145,6 @@ public class Gamelogic {
         this.turned = number;
     }
 
-    public void setFirst(int number) {
-        this.first = number;
-    }
-
-    public void setSecond(int number) {
-        this.second = number;
-    }
-
     /**
      * 
      * Adds a match and increases the amount of made matches

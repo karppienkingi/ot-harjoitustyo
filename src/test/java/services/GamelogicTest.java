@@ -46,7 +46,6 @@ public class GamelogicTest {
     }
 
     @Test
-
     public void winChekcReturnsCorrectWhenNoWin() {
         boolean expected = false;
         assertEquals(expected, logic.winCheck());
@@ -85,20 +84,4 @@ public class GamelogicTest {
         int expected = 0;
         assertEquals(expected, logic.getMatchAmount());
     }
-
-    @Test
-    public void MatchCheckReturnsTryAgain() {
-
-    }
-
-    @Test
-    public void MatchCheckReturnsMatch() {
-
-    }
-
-    @Test
-    public void MatchCheckReturnsYouWon() {
-
-    }
-
 }
