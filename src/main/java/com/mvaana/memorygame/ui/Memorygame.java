@@ -29,6 +29,13 @@ public class Memorygame {
     private final Scene menuView;
     private final Stage stage;
 
+    /**
+     *
+     * Constructor for Memorygame class
+     * @param amount amount of pairs in game
+     * @param scene scene object to build layout of the game
+     * @param stage stage object to show layout to users
+     */
     public Memorygame(int amount, Scene scene, Stage stage) {
         this.stage = stage;
         this.menuView = scene;
@@ -91,10 +98,19 @@ public class Memorygame {
         this.gameView = new Scene(this.game, 600, 600, Color.GHOSTWHITE);
     }
 
+    /**
+     * 
+     * Returns game scene
+     * @return scene object of a game layout
+     */
     public Scene setGame() {
         return gameView;
     }
 
+    /**
+     * 
+     *  Sets scene to menu view
+     */
     public void setMenu() {
         this.stage.setScene(menuView);
     }

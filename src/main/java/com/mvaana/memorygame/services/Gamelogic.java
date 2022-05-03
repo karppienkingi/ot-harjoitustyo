@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 /**
  *
  * @author Mirka
+ * Class that controls the logic of the game
  */
 public class Gamelogic {
 
@@ -19,6 +20,12 @@ public class Gamelogic {
     private int matches;
     private final HashMap<Integer, Integer> cardMatches;
 
+    /**
+     * 
+     * Constructor for Gamelogic
+     * @param amountOfPairs the amount of pairs in game
+     * 
+     */
     public Gamelogic(int amountOfPairs) {
 
         this.cardMatches = new HashMap<>();
@@ -32,6 +39,12 @@ public class Gamelogic {
 
     }
 
+    /**
+     *
+     * First card pick in a round
+     * @param buttons array of buttons used as cards in ui
+     * @param cardnro picked card
+     */
     public void pickFirst(Button[] buttons, int cardnro) {
         if (this.first != -1 && this.second != -1 && this.lastMatch == false) {
             displayImage(buttons[this.first], 1);
@@ -43,6 +56,13 @@ public class Gamelogic {
         buttons[this.first].setDisable(true);
     }
 
+    /**
+     *
+     * Second card pick in a round
+     * @param buttons array of buttons used as cards in ui
+     * @param cardnro a picked card
+     * @return a string that indicates, whether there was a match, victory or fail
+     */
     public String pickSecond(Button[] buttons, int cardnro) {
         this.second = cardnro;
         displayImage(buttons[this.second], 2);
@@ -55,10 +75,22 @@ public class Gamelogic {
         return result;
     }
 
+    /**
+     *
+     * Checks if a game is won
+     * @return true if the amount of matches found equals to the amount of pairs in game, false otherwise
+     */
     public boolean winCheck() {
         return this.matches == this.pairAmount;
     }
 
+    /**
+     *
+     * Checks if picked cards form a pair
+     * @param cardnro card that is picked second
+     * @param buttons array of buttons used as cards in ui
+     * @return a string that indicates, whether there was a match, victory or fail
+     */
     public String matchCheck(int cardnro, Button[] buttons) {
         if (this.cards.getPair(this.second) == this.first) {
             if (!this.cardMatches.containsKey(this.first) && !this.cardMatches.containsKey(this.second)) {
@@ -76,6 +108,11 @@ public class Gamelogic {
         return "Try again!";
     }
 
+    /**
+     *  
+     * Turns picked cards around
+     * @param buttons array of buttons used as cards in ui
+     */
     public void turn(Button[] buttons) {
 
         buttons[this.first].setGraphic(null);
@@ -86,6 +123,12 @@ public class Gamelogic {
         return this.turned;
     }
 
+    /**
+     * 
+     * Displays image of a button
+     * @param button pressed button in the ui
+     * @param place indicates if a card was picked first or second
+     */
     public void displayImage(Button button, int place) {
         switch (place) {
             case 1:
@@ -110,6 +153,12 @@ public class Gamelogic {
         this.second = number;
     }
 
+    /**
+     * 
+     * Adds a match and increases the amount of made matches
+     * @param card1 a card picked first
+     * @param card2 a card picked second
+     */
     public void addMatch(int card1, int card2) {
         this.cardMatches.put(card1, card2);
         this.cardMatches.put(card2, card1);
@@ -117,6 +166,12 @@ public class Gamelogic {
 
     }
 
+    /**
+     * 
+     *  Used to fetch a wanted pair
+     * @param card a card which pair is needed
+     * @return pair of this card
+     */
     public int getMatch(int card) {
         return this.cardMatches.get(card);
     }
@@ -125,6 +180,11 @@ public class Gamelogic {
         return this.matches;
     }
 
+    /**
+     * 
+     * Used at the end of the game to hide all pictures
+     * @param buttons array of buttons used as cards in ui
+     */
     public void turnAll(Button[] buttons) {
         for (Button button: buttons) {
             button.setGraphic(null);

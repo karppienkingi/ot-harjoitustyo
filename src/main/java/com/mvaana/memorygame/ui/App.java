@@ -14,11 +14,16 @@ import javafx.stage.Stage;
 
 /**
  * JavaFX App
+ *
  */
 public class App extends Application {
 
     static Memorygame game;
 
+    /**
+     * Overridden method to start the app 
+     * @param stage stage object
+     */
     @Override
     public void start(Stage stage) {
 
@@ -52,6 +57,10 @@ public class App extends Application {
 
     }
 
+    /**
+     *  Main method
+     * @param args
+     */
     public static void main(String[] args) {
         launch();
     }
