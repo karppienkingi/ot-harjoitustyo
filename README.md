@@ -4,6 +4,8 @@
 
 ## Dokumentaatio
 
+[Käyttöohje](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 [Määrittelydokumentti](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/Maarittelydokumentti.md)
 
 [Työaikakirjanpito](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
