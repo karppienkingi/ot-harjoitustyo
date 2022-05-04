@@ -18,6 +18,8 @@
 
 [viikko 5](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko5)
 
+[viikko 6](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko6)
+
 ## Komentorivitoiminnot
 
 ### Ohjelman suoritus
