@@ -17,4 +17,5 @@
 |27.4.  | 7     | Korttien kuvapuolet lisätty |
 |29.4.  | 4     | Käyttöliittymän hiomista ja refaktorointia |
 |3.5.   | 5     | Dokumentaatiota ja koodin siivoamista |
+|4.5.   | 1     | Jar-tiedoston ongelmat korjattu|
 | yht.  | 58    ||
