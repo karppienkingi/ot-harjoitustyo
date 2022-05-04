@@ -18,7 +18,6 @@ import javafx.stage.Stage;
  */
 public class App extends Application {
 
-    static Memorygame game;
 
     /**
      * Overridden method to start the app 
@@ -26,7 +25,7 @@ public class App extends Application {
      */
     @Override
     public void start(Stage stage) {
-
+        
         Label title = createLabel("Memory-game", 50);
         Label text = createLabel("Select a level of difficulty", 27);
 
@@ -73,6 +72,7 @@ public class App extends Application {
     }
 
     private static Button createButton(String text, Integer amountOfPairs, Stage stage, Scene scene) {
+
         Button button = new Button(text);
         Font font = Font.font("Stone", 20);
         button.setFont(font);
@@ -80,7 +80,7 @@ public class App extends Application {
         button.setFocusTraversable(false);
 
         button.setOnAction((event) -> {
-            game = new Memorygame(amountOfPairs, scene, stage);
+            Memorygame game = new Memorygame(amountOfPairs, scene, stage);
             stage.setScene(game.setGame());
         });
         return button;
