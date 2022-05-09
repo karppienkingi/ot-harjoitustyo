@@ -1,11 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
 package com.mvaana.memorygame.services;
 
-import com.mvaana.memorygame.services.Gamelogic;
-import javafx.scene.control.Button;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
