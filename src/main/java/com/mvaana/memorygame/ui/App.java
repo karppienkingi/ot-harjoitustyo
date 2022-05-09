@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -18,15 +19,15 @@ import javafx.stage.Stage;
  */
 public class App extends Application {
 
-
     /**
-     * Overridden method to start the app 
+     * Overridden method to start the app
+     *
      * @param stage stage object
      */
     @Override
     public void start(Stage stage) {
-        
-        Label title = createLabel("Memory-game", 50);
+
+        Label title = createLabel("Memory Game", 50);
         Label text = createLabel("Select a level of difficulty", 27);
 
         BorderPane pane = new BorderPane();
@@ -43,9 +44,10 @@ public class App extends Application {
         buttons.getChildren().addAll(text, zero, easy, medium, hard);
 
         pane.setTop(title);
-        pane.setAlignment(title, Pos.CENTER);
+        pane.setPadding(new Insets(5, 5, 5, 5));
+        BorderPane.setAlignment(title, Pos.CENTER);
         pane.setCenter(buttons);
-        pane.setAlignment(buttons, Pos.CENTER);
+        BorderPane.setAlignment(buttons, Pos.TOP_CENTER);
 
         stage.setWidth(900);
         stage.setHeight(700);
@@ -56,7 +58,8 @@ public class App extends Application {
     }
 
     /**
-     *  Main method
+     * Main method
+     *
      * @param args
      */
     public static void main(String[] args) {

@@ -25,6 +25,7 @@ public class Memorygame {
     private Button[] buttons;
     private final Button newgame;
     private final Button toMenu;
+    private final Button reset;
     private final Scene gameView;
     private final VBox game;
     private Label roundResult;
@@ -47,14 +48,31 @@ public class Memorygame {
         this.logic = new Gamelogic(this.amountOfPairs);
 
         this.newgame = createButton("Play again");
+        this.newgame.setVisible(false);
+
         this.toMenu = createButton("Back to menu");
 
+        this.toMenu.setOnAction((event) -> {
+            this.newgame.setVisible(false);
+            this.toMenu.setVisible(false);
+            setMenu();
+        });
+
+        this.reset = createButton("Reset");
+        this.reset.setOnAction((event) -> {
+            this.logic = new Gamelogic(this.amountOfPairs);
+            this.counter.setText("TRY COUNT: 0");
+            for (Button button : buttons) {
+                button.setDisable(false);
+                logic.turnAll(buttons);
+                this.roundResult.setText("");
+            }
+        });
+
         this.roundResult = createLabel("");
-        
         this.counter = createLabel("TRY COUNT: 0");
-        
+
         buttons = new Button[this.amountOfPairs * 2];
-        
         for (int i = 0; i < amount * 2; i++) {
             buttons[i] = new Button("" + (i));
             buttons[i].setMinSize(120, 200);
@@ -65,7 +83,7 @@ public class Memorygame {
             b.setOnAction((event) -> {
                 if (logic.getTurned() == -1) {
                     logic.pickFirst(buttons, Integer.valueOf(b.getText()));
-                } else {                  
+                } else {
                     this.roundResult.setText(logic.pickSecond(buttons, Integer.valueOf(b.getText())));
                     this.counter.setText("TRY COUNT: " + logic.getCounter());
                     if (logic.winCheck()) {
@@ -96,8 +114,9 @@ public class Memorygame {
         }
 
         VBox buttonlist = new VBox(5);
+        buttonlist.setPadding(new Insets(10, 10, 10, 10));
         buttonlist.setAlignment(Pos.CENTER);
-        buttonlist.getChildren().addAll(this.counter, this.newgame, this.toMenu);
+        buttonlist.getChildren().addAll(this.counter, this.newgame, this.toMenu, this.reset);
 
         this.game = new VBox();
         this.game.getChildren().addAll(board, this.roundResult);
@@ -130,28 +149,21 @@ public class Memorygame {
 
     private void endGame() {
         this.newgame.setVisible(true);
-        this.toMenu.setVisible(true);
+        this.reset.setVisible(false);
         this.newgame.setOnAction((event) -> {
             this.logic = new Gamelogic(this.amountOfPairs);
             this.newgame.setVisible(false);
-            this.toMenu.setVisible(false);
+            this.reset.setVisible(true);
             this.counter.setText("TRY COUNT: 0");
             for (Button button : buttons) {
                 button.setDisable(false);
                 logic.turnAll(buttons);
                 this.roundResult.setText("");
             }
-            setGame();
-        });
-
-        this.toMenu.setOnAction((event) -> {
-            this.newgame.setVisible(false);
-            this.toMenu.setVisible(false);
-            setMenu();
         });
 
     }
-    
+
     private static Label createLabel(String text) {
         Label label = new Label(text);
         label.setFont(Font.font("Stone", 40));
@@ -164,7 +176,6 @@ public class Memorygame {
         button.setFocusTraversable(false);
         button.setPrefSize(150, 30);
         button.setFont(Font.font("Stone", 16));
-        button.setVisible(false);
 
         return button;
     }
@@ -173,7 +184,7 @@ public class Memorygame {
         GridPane pane = new GridPane();
         pane.setHgap(10);
         pane.setVgap(5);
-        pane.setPadding(new Insets(10, 10, 10, 10));
+        pane.setPadding(new Insets(25, 10, 10, 15));
 
         return pane;
     }
