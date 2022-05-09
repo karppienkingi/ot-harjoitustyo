@@ -9,31 +9,31 @@ import javafx.scene.shape.Shape;
 
 /**
  *
- * @author Mirka
- * A class used to create needed pictures
+ * @author Mirka A class used to create needed pictures
  */
 public class Images {
 
     /**
-     * 
+     *
      * the amount of needed pictures
      */
     private int amount;
 
     /**
-     * 
+     *
      * the list where all of the pictures are put
      */
     private ArrayList<Shape> shapes;
 
     /**
-     * 
+     *
      * An array of available colors
      */
     private Color[] colors;
 
     /**
      * Constructor for Images
+     *
      * @param amountOfImages the amount of needed pictures
      */
     public Images(int amountOfImages) {
@@ -68,9 +68,10 @@ public class Images {
         }
 
     }
-    
+
     /**
-     *  Returns a list of needed pictures
+     * Returns a list of needed pictures
+     *
      * @return list
      */
     public ArrayList getImages() {
@@ -78,8 +79,9 @@ public class Images {
     }
 
     /**
-     * 
-     *  Creates a square image
+     *
+     * Creates a square image
+     *
      * @param index indicates the value from colors array, accepts values (0..3)
      */
     private void createRec(int index) {
@@ -94,6 +96,7 @@ public class Images {
     /**
      *
      * Creates a circle
+     *
      * @param index indicates the value from colors array, accepts values (0..3)
      */
     private void createCircle(int index) {
@@ -105,8 +108,9 @@ public class Images {
     }
 
     /**
-     * 
+     *
      * Creates a triangle
+     *
      * @param index indicates the value from colors array, accepts values (0..3)
      */
     private void createTriangle(int index) {
@@ -118,10 +122,11 @@ public class Images {
         this.shapes.add(triangle);
 
     }
-    
+
     /**
-     * 
+     *
      * Used to color a created shape
+     *
      * @param index indicates the value from colors array, accepts values (0..3)
      * @return a color
      */
