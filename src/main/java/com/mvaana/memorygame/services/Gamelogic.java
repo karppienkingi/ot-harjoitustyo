@@ -16,6 +16,7 @@ public class Gamelogic {
     private int second;
     private boolean lastMatch;
     private int turned;
+    private int counter;
     private final int pairAmount;
     private int matches;
     private final HashMap<Integer, Integer> cardMatches;
@@ -36,6 +37,7 @@ public class Gamelogic {
         this.first = -1;
         this.second = -1;
         this.lastMatch = false;
+        this.counter = 0;
 
     }
 
@@ -65,6 +67,7 @@ public class Gamelogic {
      */
     public String pickSecond(Button[] buttons, int cardnro) {
         this.second = cardnro;
+        this.counter++;
         displayImage(buttons[this.second], 2);
         String result = matchCheck(this.second, buttons);
         if (this.lastMatch == false) {
@@ -82,6 +85,10 @@ public class Gamelogic {
      */
     public boolean winCheck() {
         return this.matches == this.pairAmount;
+    }
+    
+    public int getCounter() {
+        return this.counter;
     }
 
     /**
@@ -181,5 +188,9 @@ public class Gamelogic {
         for (Button button: buttons) {
             button.setGraphic(null);
         }
+    }
+
+    public int getFirst() {
+        return this.first;
     }
 }
