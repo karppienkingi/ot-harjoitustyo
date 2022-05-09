@@ -38,15 +38,14 @@ public class App extends Application {
         Button medium = createButton("Medium", 6, stage, scene);
         Button hard = createButton("Hard", 12, stage, scene);
 
-        VBox buttons = new VBox();
-        buttons.setSpacing(2);
+        VBox buttons = new VBox(3);
         buttons.setPadding(new Insets(5, 5, 5, 5));
         buttons.getChildren().addAll(text, zero, easy, medium, hard);
 
         pane.setTop(title);
         pane.setAlignment(title, Pos.CENTER);
         pane.setCenter(buttons);
-        pane.setAlignment(buttons, Pos.TOP_CENTER);
+        pane.setAlignment(buttons, Pos.CENTER);
 
         stage.setWidth(900);
         stage.setHeight(700);
