@@ -2,16 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
-package domain;
+package com.mvaana.memorygame.domain;
 
 import com.mvaana.memorygame.domain.Cards;
-import java.util.HashMap;
-import org.junit.After;
-import org.junit.AfterClass;
+import java.util.HashMap;;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
