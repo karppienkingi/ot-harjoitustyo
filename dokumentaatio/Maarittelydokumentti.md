@@ -6,7 +6,7 @@ Sovellus on yksinkertainen muistipeli, jossa tarkoitus on löytää parit kään
 ## Käyttöliittymäluonnos
 Sovelluksessa on kaksi eri näkymää.
 
-![](kuvat/kayttoliittymaLuonnos.jpeg)
+![](kuvat/kayttoliittyma_luonnos.PNG)
 
 Sovellus aukeaa menuun, jossa valitaan vaikeustaso neljästä vaihtoehdosta. Valinnan jälkeen näkymä vaihtuu pelinäkymään, josta voi palata takaisin menuun, resetoida pelin (joka luo uuden pelin uusilla pareilla) tai pelin päättyessä pelata uuden pelin samalla vaikeustasolla.
 
