@@ -2,17 +2,19 @@
 
 ### Ohjelmistotekniikan harjoitustyö
 
+Sovellus on yksinkertainen muistipeli neljällä eri vaikeustasolla. Vaikeustasosta riippuen on tarkoitus kääntää kerrallaan kaksi korttia ja muodostaa näin niistä pareja. Pelin voittaa kun kaikki parit on löydetty.
+
 ## Dokumentaatio
 
 [Käyttöohje](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 [Määrittelydokumentti](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/Maarittelydokumentti.md)
 
+[Arkkitehtuurikuvaus](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 [Työaikakirjanpito](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [Changelog](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
-
-[Arkkitehtuurikuvaus](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Releaset
 
@@ -22,10 +24,14 @@
 
 ## Komentorivitoiminnot
 
+### Jarin generointi
+
+`mvn package`
+
 ### Ohjelman suoritus
 Suorita ohjelma komentoriviltä komennolla: 
 
-`mvn compile exec:java -Dexec.mainClass=com.mvaana.memorygame.ui.App`
+`mvn compile exec:java -Dexec.mainClass=com.mvaana.memorygame.Main`
 
 ### Testaus
 Ohjelman testaus suoritetaan komennolla:
@@ -36,3 +42,11 @@ Ohjelman testaus suoritetaan komennolla:
 Testikattavuuden saat luotua komennolla:
 
 `mvn test jacoco:report`
+
+### Checkstyle
+
+`mvn jxr:jxr checkstyle:checkstyle`
+
+### JavaDoc
+
+`mvn javadoc:javadoc`
