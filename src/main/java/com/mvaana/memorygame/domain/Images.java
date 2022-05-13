@@ -9,7 +9,8 @@ import javafx.scene.shape.Shape;
 
 /**
  *
- * @author Mirka A class used to create needed pictures
+ * @author Mirka 
+ * A class used to create needed pictures
  */
 public class Images {
 
