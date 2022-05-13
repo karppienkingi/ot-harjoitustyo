@@ -19,4 +19,5 @@
 |3.5.   | 5     | Dokumentaatiota ja koodin siivoamista |
 |4.5.   | 1     | Jar-tiedoston ongelmat korjattu|
 |9.5.   | 3     |Testejä, käyttöliittymän muokkausta ja siistimistä|
-| yht.  | 61    ||
+|13.5.  | 7     | Jar-tiedoston ongelmien ratkomisten yritystä, käyttöliittymän muokkausta ja dokumentaatiota|
+| yht.  | 68    ||
