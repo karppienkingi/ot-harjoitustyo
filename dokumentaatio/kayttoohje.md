@@ -3,9 +3,21 @@
 
 ## Ohjelman käynnistys
 
-suorita komentoriviltä projektin juuresta komennolla:
+Jar-tiedosto suoritetaan komentoriviltä komennolla:
 
-`mvn compile exec:java -Dexec.mainClass=com.mvaana.memorygame.ui.App`
+``java -jar memorygame-1.0-sshaded.jar``
+
+Saattaa olla, että jar-tiedoston ongelmaa ei ole saatu korjattua, joten saat ohjelman käyttöön kloonaamalla repositorion komennolla
+
+`git clone git@github.com:karppienkingi/ot-harjoitustyo.git`
+
+Tämän jälkeen mene joko luodun kansion sisälle ja suorita komento 
+`mvn package`
+
+ja suorita komento `java -jar target/memorygame-1.0-shaded.jar`
+
+tai suorita komentoriviltä projektin juuresta komennolla:
+`mvn compile exec:java -Dexec.mainClass=com.mvaana.memorygame.Main`
 
 ## Pelin aloitus
 
