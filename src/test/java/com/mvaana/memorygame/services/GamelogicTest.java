@@ -1,5 +1,6 @@
 package com.mvaana.memorygame.services;
 
+import javafx.scene.control.Button;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +12,11 @@ import org.junit.Test;
 public class GamelogicTest {
 
     Gamelogic logic;
+    Button[] buttons;
+    Button a;
+    Button b;
+    Button c;
+
     public GamelogicTest() {
     }
 
@@ -18,7 +24,6 @@ public class GamelogicTest {
     public void setUp() throws Exception {
         logic = new Gamelogic(6);
     }
-    
 
     /**
      * Test of setTurned method, of class Gamelogic.
@@ -78,5 +83,10 @@ public class GamelogicTest {
     public void getMatchAmountReturnsCorrect() {
         int expected = 0;
         assertEquals(expected, logic.getMatchAmount());
+    }
+
+    @Test
+    public void pickFirst() {
+        this.buttons = new Button[3];
     }
 }
