@@ -30,8 +30,7 @@ public class App extends Application {
         Label title = createLabel("Memory Game", 50);
         Label text = createLabel("Select a level of difficulty", 27);
 
-        BorderPane pane = new BorderPane();
-
+        BorderPane pane = createPane();
         Scene scene = new Scene(pane);
 
         Button zero = createButton("Zero challenge", 1, stage, scene);
@@ -39,12 +38,10 @@ public class App extends Application {
         Button medium = createButton("Medium", 6, stage, scene);
         Button hard = createButton("Hard", 12, stage, scene);
 
-        VBox buttons = new VBox(3);
-        buttons.setPadding(new Insets(5, 5, 5, 5));
+        VBox buttons = createBox(3);
         buttons.getChildren().addAll(text, zero, easy, medium, hard);
 
         pane.setTop(title);
-        pane.setPadding(new Insets(5, 5, 5, 5));
         BorderPane.setAlignment(title, Pos.CENTER);
         pane.setCenter(buttons);
         BorderPane.setAlignment(buttons, Pos.TOP_CENTER);
@@ -52,7 +49,7 @@ public class App extends Application {
         stage.setWidth(900);
         stage.setHeight(700);
         stage.setScene(scene);
-        stage.setTitle("Working title");
+        stage.setTitle("Memorygame");
         stage.show();
 
     }
@@ -86,6 +83,18 @@ public class App extends Application {
             stage.setScene(game.setGame());
         });
         return button;
+    }
+    
+    private static BorderPane createPane() {
+        BorderPane pane = new BorderPane();
+        pane.setPadding(new Insets(5, 5, 5, 5));        
+        return pane;
+    }
+
+    private VBox createBox(int i) {
+        VBox box = new VBox(3);
+        box.setPadding(new Insets(5, 5, 5, 5));
+        return box;
     }
 
 }

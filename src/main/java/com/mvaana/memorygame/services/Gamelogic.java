@@ -124,6 +124,8 @@ public class Gamelogic {
 
         buttons[this.first].setGraphic(null);
         buttons[this.second].setGraphic(null);
+        buttons[this.first].setStyle("-fx-background-color: #753440; ");
+        buttons[this.second].setStyle("-fx-background-color: #753440; ");
     }
 
     public int getTurned() {
@@ -140,9 +142,11 @@ public class Gamelogic {
         switch (place) {
             case 1:
                 button.setGraphic(this.cards.getImage(this.first));
+                button.setStyle("-fx-background-color: #ffffff; ");
                 break;
             case 2:
                 button.setGraphic(this.cards.getImage(this.second));
+                button.setStyle("-fx-background-color: #ffffff; ");
                 break;
         }
 
@@ -187,6 +191,7 @@ public class Gamelogic {
     public void turnAll(Button[] buttons) {
         for (Button button: buttons) {
             button.setGraphic(null);
+            button.setStyle("-fx-background-color: #753440; ");
         }
     }
 

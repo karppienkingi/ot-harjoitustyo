@@ -77,6 +77,7 @@ public class Memorygame {
             buttons[i] = new Button("" + (i));
             buttons[i].setMinSize(120, 200);
             buttons[i].setFocusTraversable(false);
+            buttons[i].setStyle("-fx-background-color: #753440; ");
         }
 
         for (final Button b : buttons) {
