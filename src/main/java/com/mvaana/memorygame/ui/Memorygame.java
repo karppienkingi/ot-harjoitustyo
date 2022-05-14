@@ -124,8 +124,8 @@ public class Memorygame {
         this.game.setFillWidth(false);
 
         GridPane grid = createGrid();
-        grid.add(this.game, 0, 0, 1, 1);
-        grid.add(buttonlist, 1, 0, 1, 1);
+        grid.add(this.game, 1, 1);
+        grid.add(buttonlist, 2, 1);
 
         this.gameView = new Scene(grid, 600, 600, Color.GHOSTWHITE);
     }
