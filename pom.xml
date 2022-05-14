@@ -33,6 +33,7 @@
                 <configuration>
                     <excludes>
                         <exclude>com/mvaana/memorygame/ui/*</exclude>
+                        <exclude>**/*com/mvaana/memorygame/*</exclude>
                     </excludes>           
                 </configuration>
                 <executions>
