@@ -20,9 +20,6 @@ public class ImagesTest {
         this.images = new Images(3);
     }
 
-    /**
-     * Test of getImages method, of class Images.
-     */
     @Test
     public void getImagesReturnsCorrectSizeListOnEasy() {
         assertEquals(3, this.images.getImages().size());

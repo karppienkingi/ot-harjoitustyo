@@ -25,9 +25,6 @@ public class GamelogicTest {
         logic = new Gamelogic(6);
     }
 
-    /**
-     * Test of setTurned method, of class Gamelogic.
-     */
     @Test
     public void testSetTurned() {
         int number = 5;
@@ -35,9 +32,6 @@ public class GamelogicTest {
         assertEquals(number, logic.getTurned());
     }
 
-    /**
-     * Test of getTurned method, of class Gamelogic.
-     */
     @Test
     public void testGetTurned() {
         int number = 6;
@@ -83,10 +77,5 @@ public class GamelogicTest {
     public void getMatchAmountReturnsCorrect() {
         int expected = 0;
         assertEquals(expected, logic.getMatchAmount());
-    }
-
-    @Test
-    public void pickFirst() {
-        this.buttons = new Button[3];
     }
 }

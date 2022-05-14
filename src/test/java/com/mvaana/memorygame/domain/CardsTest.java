@@ -1,6 +1,5 @@
 package com.mvaana.memorygame.domain;
 
-import com.mvaana.memorygame.domain.Cards;
 import java.util.HashMap;;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
