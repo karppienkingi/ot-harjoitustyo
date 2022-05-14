@@ -12,6 +12,8 @@ Sovellus on yksinkertainen muistipeli neljällä eri vaikeustasolla. Vaikeustaso
 
 [Arkkitehtuurikuvaus](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Testausdokumentti](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
 [Työaikakirjanpito](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [Changelog](https://github.com/karppienkingi/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
