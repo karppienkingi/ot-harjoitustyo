@@ -104,6 +104,8 @@ public class Memorygame {
 
         if (amount <= 3) {
             board.setPrefColumns(3);
+            stage.setWidth(900);
+            stage.setHeight(700);
         } else if (amount == 6) {
             board.setPrefColumns(4);
             this.stage.setWidth(1000);
@@ -145,6 +147,8 @@ public class Memorygame {
      * Sets scene to menu view
      */
     public void setMenu() {
+        this.stage.setWidth(900);
+        this.stage.setHeight(700);
         this.stage.setScene(menuView);
     }
 
