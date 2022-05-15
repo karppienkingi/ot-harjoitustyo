@@ -20,15 +20,24 @@ Sovellus on yksinkertainen muistipeli neljällä eri vaikeustasolla. Vaikeustaso
 
 ## Releaset
 
-[viikko 5](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko5)
+[viikko 7](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko7)
 
 [viikko 6](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko6)
 
+[viikko 5](https://github.com/karppienkingi/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Komentorivitoiminnot
 
-### Jarin generointi
+### Jarin generointi ja ajaminen
 
 `mvn package`
+
+generoi target-kansioon jar-tiedoston nimeltä *memorygame-1.0-shaded.jar*.
+Tällä komennolla generoituu myös tiedosto *memorygame-1.0.jar*, mutta tätä ei voi käyttää.
+
+Jar tiedoston voi suorittaa komennolla 
+
+`java -jar memorygame-1.0-shaded.jar`
 
 ### Ohjelman suoritus
 Suorita ohjelma komentoriviltä komennolla: 
