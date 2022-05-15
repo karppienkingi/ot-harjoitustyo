@@ -87,6 +87,10 @@ public class Gamelogic {
         return this.matches == this.pairAmount;
     }
     
+    /**
+     * 
+     * @return the amount of rounds in this game 
+     */
     public int getCounter() {
         return this.counter;
     }
@@ -127,7 +131,11 @@ public class Gamelogic {
         buttons[this.first].setStyle("-fx-background-color: #753440; ");
         buttons[this.second].setStyle("-fx-background-color: #753440; ");
     }
-
+    
+    /**
+     * 
+     * @return first turned card 
+     */
     public int getTurned() {
         return this.turned;
     }
@@ -151,7 +159,11 @@ public class Gamelogic {
         }
 
     }
-
+    
+    /**
+     * Sets the turned card
+     * @param number picked card 
+     */
     public void setTurned(int number) {
         this.turned = number;
     }
@@ -178,7 +190,11 @@ public class Gamelogic {
     public int getMatch(int card) {
         return this.cardMatches.get(card);
     }
-
+    
+    /**
+     * 
+     * @return the amount of made matches 
+     */
     public int getMatchAmount() {
         return this.matches;
     }
@@ -194,7 +210,11 @@ public class Gamelogic {
             button.setStyle("-fx-background-color: #753440; ");
         }
     }
-
+    
+    /**
+     * 
+     * @return the first picked card 
+     */
     public int getFirst() {
         return this.first;
     }

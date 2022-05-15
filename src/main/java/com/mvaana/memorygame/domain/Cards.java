@@ -12,34 +12,10 @@ import javafx.scene.shape.Shape;
  */
 public class Cards {
 
-    /**
-     * 
-     * A list for images of the cards
-     */
     private final ArrayList<Shape> images;
-
-    /**
-     *
-     * A list for created cards
-     */
     private final ArrayList<Integer> cards;
-
-    /**
-     *
-     * HashMap for created pairs
-     */
     private final HashMap<Integer, Integer> pairs;
-
-    /**
-     *
-     * Map that connects images to cards
-     */
     private final HashMap<Integer, Shape> cardsImages;
-
-    /**
-     *
-     * Amount of cards in game
-     */
     private final int amountOfCards;
 
     /**
@@ -60,10 +36,6 @@ public class Cards {
         createPairs();
     }
 
-    /**
-     *
-     * Randomly creates pairs from available list of cards
-     */
     private void createPairs() {
         Collections.shuffle(this.cards);
 
@@ -77,6 +49,10 @@ public class Cards {
         }
     }
 
+    /**
+     * A getter for pairs
+     * @return HashMap of pairs 
+     */
     public HashMap<Integer, Integer> getPairs() {
         return this.pairs;
     }

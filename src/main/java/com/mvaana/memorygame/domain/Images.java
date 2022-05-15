@@ -14,27 +14,13 @@ import javafx.scene.shape.Shape;
  */
 public class Images {
 
-    /**
-     *
-     * the amount of needed pictures
-     */
     private int amount;
-
-    /**
-     *
-     * the list where all of the pictures are put
-     */
     private ArrayList<Shape> shapes;
-
-    /**
-     *
-     * An array of available colors
-     */
     private Color[] colors;
 
     /**
-     * Constructor for Images
-     *
+     * 
+     * Constructor for Images, that creates the pictures based on the number of pairs
      * @param amountOfImages the amount of needed pictures
      */
     public Images(int amountOfImages) {
@@ -71,20 +57,14 @@ public class Images {
     }
 
     /**
+     * 
      * Returns a list of needed pictures
-     *
-     * @return list
+     * @return list of shapes
      */
     public ArrayList getImages() {
         return this.shapes;
     }
 
-    /**
-     *
-     * Creates a square image
-     *
-     * @param index indicates the value from colors array, accepts values (0..3)
-     */
     private void createRec(int index) {
         Rectangle rec = new Rectangle();
         rec.setWidth(100);
@@ -94,12 +74,6 @@ public class Images {
 
     }
 
-    /**
-     *
-     * Creates a circle
-     *
-     * @param index indicates the value from colors array, accepts values (0..3)
-     */
     private void createCircle(int index) {
         Circle circle = new Circle();
         circle.setRadius(50);
@@ -108,12 +82,6 @@ public class Images {
 
     }
 
-    /**
-     *
-     * Creates a triangle
-     *
-     * @param index indicates the value from colors array, accepts values (0..3)
-     */
     private void createTriangle(int index) {
         Polygon triangle = new Polygon();
         triangle.getPoints().setAll(100.0, 100.0,
@@ -124,13 +92,6 @@ public class Images {
 
     }
 
-    /**
-     *
-     * Used to color a created shape
-     *
-     * @param index indicates the value from colors array, accepts values (0..3)
-     * @return a color
-     */
     private Color color(int index) {
         return this.colors[index];
     }

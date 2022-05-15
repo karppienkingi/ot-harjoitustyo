@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 /**
  *
  * @author Mirka
+ * Game view
  */
 public class Memorygame {
 
@@ -36,7 +37,7 @@ public class Memorygame {
     /**
      *
      * Constructor for Memorygame class
-     *
+     * Creates the game view
      * @param amount amount of pairs in game
      * @param scene scene object to build layout of the game
      * @param stage stage object to show layout to users
@@ -135,7 +136,6 @@ public class Memorygame {
     /**
      *
      * Returns game scene
-     *
      * @return scene object of a game layout
      */
     public Scene setGame() {

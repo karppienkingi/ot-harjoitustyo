@@ -20,8 +20,8 @@ public class App extends Application {
 
     /**
      * Overridden method to start the app
-     *
      * @param stage stage object
+     * The Menu view of the application
      */
     @Override
     public void start(Stage stage) {
@@ -55,8 +55,7 @@ public class App extends Application {
 
     /**
      * Main method
-     *
-     * @param args
+     * @param args the command line arguments
      */
     public static void main(String[] args) {
         launch();
