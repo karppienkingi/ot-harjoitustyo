@@ -18,7 +18,8 @@
 |29.4.  | 4     | Käyttöliittymän hiomista ja refaktorointia |
 |3.5.   | 5     | Dokumentaatiota ja koodin siivoamista |
 |4.5.   | 1     | Jar-tiedoston ongelmat korjattu|
-|9.5.   | 3     |Testejä, käyttöliittymän muokkausta ja siistimistä|
+|9.5.   | 3     | Testejä, käyttöliittymän muokkausta ja siistimistä|
 |13.5.  | 7     | Jar-tiedoston ongelmien ratkomisten yritystä, käyttöliittymän muokkausta ja dokumentaatiota|
 |14.5.  | 2     | Koodin hiomista |
+| 15.5. | 1     |Viimeiset lisäykset koodiin ja dokumentaatioon.  |
 | yht.  | 70    ||
